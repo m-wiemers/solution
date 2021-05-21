@@ -1,0 +1,13 @@
+.inputSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputSection label {
+  padding: 0.5em 0;
+  color: var(--secondary-text-color);
+}
+
+.inputSection input {
+  padding: 0.8em;
+}

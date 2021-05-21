@@ -1,0 +1,11 @@
+.btn {
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  padding: 1em;
+  color: var(--btn-text-color);
+  font-weight: 600;
+  font-size: 1em;
+  margin: 1em 0;
+}

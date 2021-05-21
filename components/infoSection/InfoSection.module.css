@@ -1,0 +1,57 @@
+.container {
+  padding: 2em;
+  display: grid;
+  grid-template: 1fr / 3px 1fr;
+  justify-content: start;
+}
+
+.line {
+  background-color: var(--input-border-color);
+  grid-row: 1 / 3;
+}
+
+.contact,
+.adress {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+  grid-column: 2;
+}
+
+.adress p:first-child {
+  font-weight: 700;
+}
+
+.contact a {
+  margin: 0 0 0.5em 0;
+}
+
+.map {
+  background-image: url(../../public/map_mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 200px;
+  margin: 2em 0;
+  width: 90vw;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 1088px;
+    grid-template: 1fr 1fr 1fr / 3px 1fr 1fr 1fr;
+  }
+
+  .contact,
+  .adress {
+    grid-column: 2;
+  }
+
+  .map {
+    margin: 0;
+    width: inherit;
+    max-width: calc(100% - 1em);
+    grid-row: 1 / 4;
+    grid-column: 3 /5;
+    background-image: url(../../public/map_desktop.png);
+  }
+}
